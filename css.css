@@ -1,0 +1,24 @@
+#form{
+	background: #e45050;
+    color: white;
+    padding: 10px;
+}
+input{
+	margin: 2px;
+	padding: 4px;
+}
+.label{
+font-size:23px;
+float:right;
+}
+input:hover{
+	background-color:#00ff00;
+}
+
+input::before{
+content:""; position:absolute;top:0;left:0;width:100%;height:100%; background-color:#00ff00;z-index:-1;filter:blur(0);transition:all 0.4s;
+
+}
+input:hover::before{
+	filter:blur(20);
+}
